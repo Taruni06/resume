@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Resume — Taruni S R</title>
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --accent: #0b74de;
+        --muted: #6b7280;
+        --glass: rgba(11, 116, 222, 0.08);
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+          Roboto, "Helvetica Neue", Arial;
+        background: var(--bg);
+        color: #111827;
+      }
+      .container {
+        max-width: 900px;
+        margin: 28px auto;
+        padding: 28px;
+      }
+      .card {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.98),
+          var(--card)
+        );
+        border-radius: 14px;
+        padding: 28px;
+        box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 24px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+      }
+      .avatar {
+        width: 88px;
+        height: 88px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--accent), #7cb9ff);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: 700;
+        font-size: 28px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 22px;
+      }
+      .headline {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 6px;
+      }
+      .section {
+        margin-top: 18px;
+      }
+      .section h2 {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+        color: #0f172a;
+      }
+      .p-muted {
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+      .contact {
+        background: var(--glass);
+        padding: 12px;
+        border-radius: 10px;
+      }
+      .contact p {
+        margin: 6px 0;
+        font-size: 13px;
+        color: #0f172a;
+      }
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .skill {
+        background: #f1f5f9;
+        padding: 8px 10px;
+        border-radius: 8px;
+        font-size: 13px;
+        color: #0f172a;
+      }
+      .experience {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .job {
+        padding: 12px;
+        border-radius: 10px;
+        background: #fff;
+        border: 1px solid rgba(15, 23, 42, 0.03);
+      }
+      .job h3 {
+        margin: 0;
+        font-size: 15px;
+      }
+      .job .meta {
+        color: var(--muted);
+        font-size: 13px;
+        margin-top: 6px;
+      }
+      .bullets {
+        margin: 8px 0 0 16px;
+      }
+      .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      footer {
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      @media (max-width: 880px) {
+        .card {
+          grid-template-columns: 1fr;
+        }
+        .avatar {
+          width: 72px;
+          height: 72px;
+        }
+      }
+      @media print {
+        body {
+          background: white;
+        }
+        .container {
+          margin: 0;
+          padding: 0;
+        }
+        .card {
+          box-shadow: none;
+          border-radius: 0;
+          padding: 12px;
+          grid-template-columns: 1fr;
+        }
+        .contact {
+          background: transparent;
+          padding: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <main>
+          <header>
+            <div class="avatar">TS</div>
+            <div>
+              <h1>Taruni S R</h1>
+              <div class="headline">
+                Computer Science Engineering Student • Aspiring Full‑Stack
+                Developer
+              </div>
+            </div>
+          </header>
+
+          <section class="section">
+            <h2>Summary</h2>
+            <p class="p-muted">
+              Motivated and skilled Computer Science Engineering student with a
+              strong interest in full-stack software development. Seeking an
+              opportunity to leverage knowledge in front-end and back-end
+              technologies to build robust, scalable applications. Demonstrates
+              a solid foundation in programming, web development frameworks, and
+              database management, with a goal to create impactful solutions in
+              collaborative, fast-paced environments.
+            </p>
+          </section>
+
+          <section class="section">
+            <h2>Education</h2>
+            <div>
+              <strong>B.E Computer Science and Engineering</strong>
+              <div class="p-muted">
+                Chennai Institute of Technology, Chennai · CGPA 8.9 · 2023–2027
+              </div>
+            </div>
+            <div>
+              <strong>HSC</strong>
+              <div class="p-muted">KRM Public School, Chennai · 82.6%</div>
+            </div>
+            <div>
+              <strong>SSLC</strong>
+              <div class="p-muted">SDCVV School, Chennai · 83.3%</div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Experience</h2>
+            <div class="experience">
+              <article class="job">
+                <h3>Web Development Intern — Veerel Enterprises</h3>
+                <div class="meta">Nov 2024 – Dec 2024 · 2 months</div>
+                <ul class="bullets">
+                  <li>
+                    Developed responsive and user-friendly web applications
+                    using React, HTML, CSS, and JavaScript.
+                  </li>
+                  <li>
+                    Contributed to UI design, performance optimization, and
+                    cross-platform integration.
+                  </li>
+                  <li>
+                    Collaborated with the team to deliver client-ready solutions
+                    aligned with industry best practices.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="job">
+                <h3>
+                  Cloud Managed Services Intern — Sify Technologies Services
+                  Ltd.
+                </h3>
+                <div class="meta">May 2025 – June 2025 · 45 days</div>
+                <ul class="bullets">
+                  <li>
+                    Worked in the Delivery team, contributing to full-stack
+                    development tasks in cloud-managed services.
+                  </li>
+                  <li>
+                    Gained experience in managing cloud environments and
+                    deploying scalable solutions.
+                  </li>
+                  <li>
+                    Collaborated with cross-functional teams to ensure smooth
+                    integration and performance optimization.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+              <div>
+                <strong>Brain Tumor Detection Web App</strong>
+                <div class="p-muted">React</div>
+                <p class="p-muted">
+                  Developed a brain tumor detection web application using React,
+                  providing an intuitive interface for uploading and visualizing
+                  MRI scans with real-time results.
+                </p>
+              </div>
+
+              <div>
+                <strong>Personal Finance Tracker</strong>
+                <div class="p-muted">
+                  React, Node.js (Express), MongoDB, Postman
+                </div>
+                <p class="p-muted">
+                  Built a full-stack web app for managing income and expenses
+                  with a responsive React frontend, REST APIs in Express.js, and
+                  MongoDB for secure data storage.
+                </p>
+              </div>
+
+              <div>
+                <strong>Game Development</strong>
+                <div class="p-muted">Tic Tac Toe · Countdown/Stopwatch</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Certifications</h2>
+            <div class="p-muted">
+              Data Structures and Graphs (Coursera) · Introduction to Networking
+              Essentials (Cisco) · Introduction to C (Cisco) · Modeling
+              Structures and Analytical Modeler (Bentley)
+            </div>
+          </section>
+
+          <footer>
+            <div>
+              References available on request · Open to internships and projects
+            </div>
+          </footer>
+        </main>
+
+        <aside>
+          <div class="contact">
+            <p><strong>Email</strong><br />tarunisr.cse2023@citchennai.net</p>
+            <p><strong>Phone</strong><br />7010365169 / +91 6381389306</p>
+            <p><strong>Location</strong><br />Chennai, India</p>
+            <p><strong>GitHub</strong><br />github.com/Taruni06</p>
+          </div>
+
+          <div class="section">
+            <h2>Skills</h2>
+            <div class="skill-list">
+              <div class="skill">Java</div>
+              <div class="skill">C++</div>
+              <div class="skill">HTML / CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">React.js</div>
+              <div class="skill">Node.js</div>
+              <div class="skill">MongoDB</div>
+              <div class="skill">MySQL</div>
+              <div class="skill">Git / GitHub</div>
+              <div class="skill">Postman</div>
+              <div class="skill">VS Code</div>
+              <div class="skill">Eclipse</div>
+              <div class="skill">Canva</div>
+              <div class="skill">MS Excel</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Additional Skills</h2>
+            <div class="p-muted">
+              Machine Learning Onramp (MathWorks) · Automation Explorer (UiPath)
+              · Cyber Security Basics (Cisco)
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
